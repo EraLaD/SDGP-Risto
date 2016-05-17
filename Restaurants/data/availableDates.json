@@ -1,0 +1,9 @@
+[
+	{"name": "Weekdays"}, 
+	{"name": "Weekends"}, 
+	{"name": "Everyday"},
+	{"name": "Breakfast"}, 
+	{"name": "Lunch"}, 
+	{"name": "Dinner"},
+	{"name": "Tea"}
+]
