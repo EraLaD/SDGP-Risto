@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Blog - Business Casual - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+	
+		<!--Our own CSS-->
+	<link href="css/main.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+    <div class="brand">Risto</div>
+    <div class="address-bar">Team LESA</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Risto</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="Order_Reservation_Payement.html">Order/ Reservation/<br>Payement</a>
+                    </li>
+                    <li>
+                        <a href="Offers_Loyalty_Points.html">Offers & Loyalty Points</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+               <!-- <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">History-<br><br>
+                        <strong><a href="#order_history">Order</a>/<a href="#order_history"> Reservation</a>/<a href="#order_history"> Payement</a></strong>
+                    </h2>
+                    <hr>
+                </div>-->
+                <div class="col-lg-12 text-center">
+					<hr>
+					<h2>Order History
+                        <br>
+                      
+                    </h2>
+					<hr>
+					<!--<div class="caption" id="order_history">Order History</div>	-->
+					<div id="table">
+						<div class="header-row order_row">
+						<span class="cell primary">Restaurant</span>
+						<span class="cell">Date</span>
+						<span class="cell">Order No.</span>
+						 <span class="cell">Order Items</span>
+						<span class="cell">Delivery Details</span>
+						<span class="cell">Pick up time</span>
+						 <span class="cell">Price</span>
+						 <span class="cell">Payment</span>
+						<span class="cell">Order Status</span>
+
+					   
+					  </div>
+					  <div class="order_row">
+						<input type="radio" name="expand">
+						<span class="cell primary" data-label="Restaurant">Lagoon</span>
+						<span class="cell" data-label="Date">21/03/2010</span>
+						 <span class="cell" data-label="Order No">O01</span>
+						 <span class="cell" data-label="Order Items">Milk rice</span>
+						<span class="cell" data-label="Delivery Details"><a href=""></a>kottawa</span>
+						 <span class="cell" data-label="Pick up time"><a href="">08.30</a></span>
+							 <span class="cell" data-label="Price"><a href=""></a>1000</span>
+							 <span class="cell" data-label="Payment"><a href=""></a>Paid</span>
+						 <span class="cell" data-label="Order Status"><a href="">Completed</a></span>
+	
+					  
+					</div> <br>
+										  <div class="order_row">
+						<input type="radio" name="expand">
+						<span class="cell primary" data-label="Restaurant">Lagoon</span>
+						<span class="cell" data-label="Date">21/03/2010</span>
+						 <span class="cell" data-label="Order No">O01</span>
+						 <span class="cell" data-label="Order Items">Milk rice</span>
+						<span class="cell" data-label="Delivery Details"><a href=""></a>kottawa</span>
+						 <span class="cell" data-label="Pick up time"><a href="">08.30</a></span>
+							 <span class="cell" data-label="Price"><a href=""></a>1000</span>
+							 <span class="cell" data-label="Payment"><a href=""></a>Paid</span>
+						 <span class="cell" data-label="Order Status"><a href="">Completed</a></span>
+	
+					  
+					</div> <br>
+					<p><a href="#bs-example-navbar-collapse-1">Top</a></p>
+					<br><br>
+                </div>
+
+                <div class="col-lg-12 text-center">
+					<hr>
+						 <h2>Reservation History
+							<br>
+						  
+						</h2>
+					<hr>
+                  <!--  <div class="caption" id="order_history">Reservation History</div>	-->
+					<div id="table">
+						<div class="header-row order_row">
+						<span class="cell primary">Restaurant</span>
+						<span class="cell">Date</span>
+						<span class="cell">Reservation No.</span>
+						 <span class="cell">Table No./ Hall No.</span>
+						<span class="cell">Time</span>
+						<span class="cell">Reservation Status</span>
+						 <span class="cell">Price</span>						
+						<span class="cell">Payment</span>
+						<span class="cell">Confirm/Cancel</span>
+						
+					   
+					  </div>
+					  <div class="order_row">
+						<input type="radio" name="expand">
+						<span class="cell primary" data-label="Restaurant">Lagoon</span>
+						<span class="cell" data-label="Date">21/03/2010</span>
+						 <span class="cell" data-label="Reservation No.">R01</span>
+						 <span class="cell" data-label="Table No./ Hall No.">_23</span>
+						<span class="cell" data-label="Time"><a href=""></a>_</span>
+						 <span class="cell" data-label="Reservation Status"><a href="">Completed</a></span>
+							 <span class="cell" data-label="Payment"><a href=""></a>Paid</span>
+						 <span class="cell" data-label="Price"><a href="">1000.00</a></span>
+						 <span class="cell" data-label="Confirm/Cancel"><a href="">Confirmed</a></span>
+					  </div>
+						
+					  
+					</div>
+					 <br>
+					<p><a href="#bs-example-navbar-collapse-1">Top</a></p>
+                  
+					<br><br>
+                </div>
+				<div class="col-lg-12 text-center">
+					<hr>
+						 <h2>Payement History
+							<br>
+						  
+						</h2>
+					<hr>
+              <!--      <div class="caption" id="order_history">Payement History</div>	-->
+					<div id="table">
+						<div class="header-row order_row">
+						<span class="cell primary">Restaurant</span>
+						<span class="cell">Date</span>
+						<span class="cell">Reservation No./Order No.</span>
+						 <span class="cell">Price</span>
+						<span class="cell">Payment</span>
+
+						
+					   
+					  </div>
+					  <div class="order_row">
+						<input type="radio" name="expand">
+						<span class="cell primary" data-label="Restaurant">Lagoon</span>
+						<span class="cell" data-label="Date">21/03/2010</span>
+						 <span class="cell" data-label="Reservation No./Order No.">R01</span>
+						 <span class="cell" data-label="Price">1000.00</span>
+						<span class="cell" data-label="Trans"><a href=""></a>_</span>
+					
+
+					  
+					</div>
+					 <br>
+					<p><a href="#bs-example-navbar-collapse-1">Top</a></p>
+
+                    <hr>
+					
+                </div>
+            </div>
+        </div>
+		</div>
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                   <p>Copyright &copy; Risto 2015</p>
+					<p>Team LESA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
