@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<!--<meta name="viewport" content="width=device-width">-->
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Risto- RestaurantPage</title>
+
+	<!--Time picker-->
+	<link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker.css" />
+	<!--[if lt IE 9]>
+    <script>document.createElement('section')</script>
+    <style type="text/css">
+        .holder {
+            position: relative;
+            z-index: 10000;
+        }
+        .datepicker {
+            display: block;
+        }
+    </style>
+<![endif]-->
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+	 <!-- My CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+    <div class="brand">Risto</div>
+    <div class="address-bar">No.57 |Ramakrishna Road  | Colombo 06  | Srilanka   </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html">Business Casual</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="restaurant_Home.html">Home</a>
+                    </li>
+					
+                    <li>
+                        <a href="restaurant_MenusOffers.html">Menus & <br> Offers</a>
+						
+                    </li>
+                    <li>
+                        <a href="restaurant_ReservationOrders.html">Reservations <br> & Orders</a>
+                    </li>
+                    <li>
+                        <a href="restaurant_PaymentsLoyaltyPoints.html">Payments & <br> Loyalty Points</a>
+                    </li>
+					
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12 text-center">
+                    <div id="carousel-example-generic" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators hidden-xs">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img class="img-responsive img-full" src="img/slide-1.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-2.jpg" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-responsive img-full" src="img/slide-3.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+                    <h2 class="brand-before">
+                        <small>Welcome </small>
+                    </h2>
+                    <h1 class="brand-name">&nbsp;&nbsp;Risto- <br>Restaurant Section</h1>
+                    <hr class="tagline-divider">
+                    <h2>
+                        <small>By
+                            <strong>Team LESA</strong>
+                        </small>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Restaurant Profile</strong>
+                    </h2>
+                    <hr>
+                   
+                    <hr class="visible-xs">
+					<div class="row">
+						<div class="box">
+							<div class="col-lg-12">
+			 
+								<form role="form" id="restaurant_form">
+									<div class="row">
+											<div class="form-group col-lg-12 col-md-12 col-xs-12">
+												<label>Name</label>
+												<input type="text" class="form-control" name="restaurant_Name">
+											</div>
+											
+											<div class="form-group col-lg-12 col-md-12 col-xs-12">
+												<label>Email Address</label>
+												<input type="email" class="form-control" name="restaurant_Email">
+											</div>
+											<div class="form-group col-lg-12 col-md-12 col-xs-12">
+												<label>Phone Number</label>
+												<input type="tel" class="form-control" name="restaurant_PhoneNo">
+											</div>
+											
+											<div class="form-group col-lg-12 col-md-12 col-xs-12">
+												<label>Address</label><br>
+												
+												<div class="form-group col-lg-6 col-md-6 col-xs-12">
+													<label>Number</label>
+													<input type="text" class="form-control" name="address_Number">
+											<!--	<textarea class="form-control" rows="5"></textarea>-->
+												</div>
+												<div class="form-group col-lg-6 col-md-6 col-xs-12">
+													<label>Street </label>
+													<input type="text" class="form-control" name="address_Street">
+											
+												</div>	
+												<div class="form-group col-lg-6 col-md-6 col-xs-12">
+													<label>City </label>
+													<input type="text" class="form-control" name="address_City">
+											
+												</div>	
+												
+												<div class="form-group col-lg-6 col-md-6 col-xs-12">
+													<label>Nearest Town</label>
+													<input type="text" class="form-control" name="address_NearestTown">
+											
+												</div>										
+											</div>
+											
+											<div class="form-group col-lg-6 col-md-6 col-xs-6">
+												 <label>Restaurant Open time</label>								
+												<input id="basicExample1" type="text" class="form-control timepicker" name="restaurant_OpenTime"/>
+										   `</div>
+
+											<div class="form-group col-lg-6 col-md-6 col-xs-6">
+												<label>Restaurant Close time</label>								
+													<input id="basicExample2" type="text" class="form-control timepicker" name="restaurant_CloseTime"/>
+											</div>	<div class="clearfix"></div>	
+											
+											<div class="form-group col-lg-6 col-md-6 col-xs-6">
+												<label>Lunch Open time</label>								
+													<input id="basicExample3" type="text" class="form-control timepicker" name="restaurant_LunchOpenTime"/>
+											</div>	
+											<div class="form-group col-lg-6 col-md-6 col-xs-6">
+												<label>Lunch Close time</label>								
+													<input id="basicExample4" type="text" class="form-control timepicker" name="restaurant_LunchCloseTime" />
+											</div>	
+											<div class="clearfix"></div>
+											
+											<div class="form-group col-lg-6 col-md-6 col-xs-6">
+												<label>Dinner Open time</label>								
+													<input id="basicExample5" type="text" class="form-control timepicker" name="restaurant_DinnerOpenTime" />
+											</div>	
+											<div class="form-group col-lg-6 col-md-6 col-xs-6">
+												<label>Dinner Close time</label>								
+													<input id="basicExample6" type="text" class="form-control timepicker"  name="restaurant_DinnerCloseTime"/>
+											</div>	
+												<div class="clearfix"></div>
+												
+											<div class="form-group col-lg-6 col-md-6 col-xs-6">
+													<label>Minimum Price</label>
+													<input type="text" class="form-control" name="minimum_Price">
+											
+											</div>		
+											<div class="form-group col-lg-6 col-md-6 col-xs-6">
+													<label>Maximum Price</label>
+													<input type="text" class="form-control" name="maximum_Price">
+											
+											</div>									
+											
+											<div class="form-group col-lg-6 col-md-6 col-xs-6">
+												<label>Short<br> Description</label>
+												<textarea class="form-control" rows="6" name="shortDescription"></textarea>
+											</div>
+											<div class="form-group col-lg-6 col-md-6 col-xs-6">
+												<label>Long<br> Description</label>
+												<textarea class="form-control" rows="6" name="longDescription"></textarea>
+											</div>
+											
+											<!--Provinces  dropdown list-->
+											<div class="col-lg-6 col-md-6 col-xs-12 dropdownlists" >
+												<label>Province</label><br>
+												
+												<div class="dropdown">
+													<button id="dropdown_services" type="button" class="dropdown-toggle btn btn-default" data-toggle="dropdown">Choose<span class="caret"></span></button> 
+													<ul class="dropdown-menu">
+															<li class="active">
+																
+																	<div class="checkbox">
+																		<label><input type="checkbox" name="provinceSelected[]" value="Eastern">Eastern</label>
+																	</div>
+																
+															</li>
+															<li>
+																
+																	<div class="checkbox">
+																		<label><input type="checkbox" name="provinceSelected[]" value="Uva">Uva</label>
+																	</div>											
+																
+															</li>
+															<li>
+																
+																	<div class="checkbox">
+																		<label><input type="checkbox" name="provinceSelected[]" value="Western">Western</label>
+																	</div>											
+																
+															</li>
+															<li>
+																
+																	<div class="checkbox">
+																		<label><input type="checkbox" name="provinceSelected[]" value="Southern">Southern</label>
+																	</div>											
+																
+															</li>
+															<li>
+																
+																	<div class="checkbox">
+																		<label><input type="checkbox" name="provinceSelected[]" value="Northern">Northern</label>
+																	</div>											
+																
+															</li>
+															<li>
+																
+																	<div class="checkbox">
+																		<label><input type="checkbox" name="provinceSelected[]" value="Central">Central</label>
+																	</div>											
+															
+															</li>
+															<li>
+																
+																	<div class="checkbox">
+																		<label><input type="checkbox" name="provinceSelected[]" value="North Western">North Western</label>
+																	</div>											
+																
+															</li>
+															<li>
+																
+																	<div class="checkbox">
+																		<label><input type="checkbox" name="provinceSelected[]" value="Sabaragamuwa">Sabaragamuwa</label>
+																	</div>											
+																
+															</li>
+															<li>
+																
+																	<div class="checkbox">
+																		<label><input type="checkbox" name="provinceSelected[]" value="North Central">North Central</label>
+																	</div>											
+																
+															</li>	
+													</ul>	
+												</div>	
+											</div>		
+											<!--Services offered dropdown list-->
+											<div class="col-lg-6 col-md-6 col-xs-12 dropdownlists">
+												<label>Services Offered</label><br>
+												
+												<div class="dropdown">
+												 
+													<button id="dropdown_services" type="button" class="dropdown-toggle btn btn-default" data-toggle="dropdown">Choose<span class="caret"></span></button> 
+													<ul class="dropdown-menu">
+														<li class="active">
+															   
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Bar">Bar</label>
+																</div>
+															
+														</li>
+														<li>
+															
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Credit_Card">Credit Card</label>
+																</div>											
+															
+														</li>
+														<li>
+															
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Free_Wifi">Free Wifi</label>
+																</div>											
+															
+														</li>
+														<li>
+															
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Take_Away">Take Away</label>
+																</div>											
+															
+														</li>
+														<li>
+															
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Delivery">Delivery</label>
+																</div>											
+														
+														</li>
+														<li>
+														
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Dine_In">Dine In</label>
+																</div>											
+														
+														</li>
+														<li>
+														
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Buffet">Buffet</label>
+																</div>											
+														
+														</li>
+														<li>
+															
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Outdoor_Dining">Outdoor Dining</label>
+																</div>											
+														
+														</li>
+														<li>
+															
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Live_Perfomances">Live Perfomances</label>
+																</div>											
+														
+														</li>	
+														<li>
+															
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Vegetarian">Vegetarian</label>
+																</div>											
+														
+														</li>
+														<li>
+															
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Air_Conditioned">Air Conditioned</label>
+																</div>											
+														
+														</li>
+														<li>
+															
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Parking_Area">Parking Area</label>
+																</div>											
+														
+														</li>
+														<li>
+															
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Family_Friendly">Family Friendly</label>
+																</div>											
+															
+														</li>
+														<li>
+														
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Reservation">Reservation</label>
+																</div>											
+														
+														</li>
+														<li>
+															
+																<div class="checkbox">
+																	<label><input type="checkbox" name="servicesSelected[]" value="Online_Order">Online Order</label>
+																</div>											
+															
+														</li>										
+													</ul>
+												</div>	
+											</div>	
+											<div class="clearfix"></div>								
+											<div class="form-group col-lg-12 col-md-12 col-xs-12">
+												<label>Restaurant Images</label>
+												<input type="file" name="restaurantImg" id="previmg" accept="image/*" multiple="multiple"/>
+												<br>
+												<div id="dvPreview">
+															
+												</div>
+											</div>
+											<div class="row" >	
+												<div class="form-group col-lg-6 col-md-6 col-xs-6" class="restaurant_button" id="butt1" >
+													  <input type="hidden" name="save" value="contact">
+													  <button id ="submit_button" type="submit" class="btn btn-default btn-lg btn-group-justified" >Submit</button>
+														
+												</div>
+												<div class="form-group col-lg-6 col-md-6 col-xs-6" class="restaurant_button" id="butt2" >
+													 <input type="hidden" name="clear" value="reset">
+														<button type="reset" class="btn btn-default restaurant_btn btn-lg btn-group-justified" id="restaurant_reset " onclick='$("#dvPreview img").remove()'n >Reset</button>   
+												</div>	
+											</div>
+									</div>
+								</form>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Risto 2015</p>
+					<p>Team LESA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+    </script>
+
+<!--Time picker-->
+  <script type="text/javascript" src="js/jquery.timepicker.js"></script>
+	<script>
+		(function($) {
+		$(function() {
+			$('input.timepicker').timepicker();
+		});
+		})(jQuery);
+	 
+	</script>
+
+	<!--Restaurant Images-->
+	<script language="javascript" type="text/javascript">
+        $(function () {
+            $("#previmg").change(function () {
+                if (typeof (FileReader) != "undefined") {
+                    var dvPreview = $("#dvPreview");
+                    dvPreview.html("");
+                    var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+                    $($(this)[0].files).each(function () {
+                        var file = $(this);
+                        if (regex.test(file[0].name.toLowerCase())) {
+                            var reader = new FileReader();
+                            reader.onload = function (e) {
+                                var img = $("<img onclick='$ (this).remove()'/>");
+                                img.attr("style", "height:150px;width: 180px");
+                                img.attr("src", e.target.result);
+                                dvPreview.append(img);
+                            }
+                            reader.readAsDataURL(file[0]);
+                        } else {
+                            alert(file[0].name + " is not a valid image file.");
+                            dvPreview.html("");
+                            return false;
+                        }
+                    });
+                } else {
+                    alert("This browser does not support HTML5 FileReader.");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

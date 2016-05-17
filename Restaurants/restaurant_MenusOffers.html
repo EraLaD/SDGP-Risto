@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>About - Business Casual - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+	<link href="css/easy-autocomplete.min.css" rel="stylesheet" type="text/css">
+	<!-- Additional CSS Themes file - not required-->
+	<link rel="stylesheet" href="css/easy-autocomplete.themes.min.css"> 
+	
+	<!--CSS by Erandi-->
+	<link rel="stylesheet" href="css/main.css"> 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+    <div class="brand">Risto</div>
+    <div class="address-bar">No.57 |Ramakrishna Road  | Colombo 06  | Srilanka   </div>
+
+    <!-- Navigation -->
+	<nav class="navbar navbar-default" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+					<a class="navbar-brand" href="index.html">Risto</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="restaurant_Home.html">Home</a>
+						</li>
+						<li>
+							<a href="restaurant_MenusOffers.html">Menus & <br> Offers</a>
+						</li>
+						<li>
+							<a href="restaurant_ReservationOrders.html">Reservations <br> & Orders</a>
+						</li>
+						<li>
+							<a href="restaurant_PaymentsLoyaltyPoints.html">Payments & <br> Loyalty Points</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+    </nav>
+
+    <div class="container">
+	<!--Menus: Should only be displayed when there are menus added by the user to the database.If there are no menus added, then don't display
+		   the table-->
+		<div class="row">
+            <div class="box">
+                <div class="col-lg-12 ">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Menus</strong>
+                    </h2>
+                    <hr>
+
+                    <hr class="visible-xs">
+					<br/>
+					<div class="col-lg-12,col-md-12, col-xs-12, text-center" >
+						<label class="Menu_name_code_labels" >Menu name:</label>
+						<label class="menuName_entered"></label>
+						<label class="Menu_name_code_labels">Menu Code: </label>
+						<label class="menuCode_entered"></label>
+					</div>
+					<div class="col-lg-12,col-md-12, col-xs-12, table-responsive, menu_table " >
+						<table class="table, table-bordered", "table-hover">
+							<div class="header-row menu_row">
+							<span class="cell primary">Dish Name</span>
+							<span class="cell">Dish Code</span>
+							<span class="cell">Cuisine Type</span>
+							<span class="cell">Dish Type</span>							
+							<span class="cell">Short Description</span>
+							<span class="cell">Price</span>
+							<span class="cell">Images</span>
+						   
+							</div>
+							<div class="menu_row">
+								<input type="radio" name="expand">
+								<span class="cell primary" data-label="Dish Name"></span>
+								<span class="cell" data-label="Dish Code"></span>
+								<span class="cell" data-label="Cuisine Type"></span>
+								<span class="cell" data-label="Dish Type"> </span>
+								<span class="cell" data-label="Short Description"> </span>
+								<span class="cell" data-label="Price"></span>							
+								<span class="cell" data-label="Images"> </span>
+							
+							</div> <br/>
+
+						</table>
+
+						<br/><br/>
+					</div>
+											
+							<h5 class="text-center"><a href="#bs-example-navbar-collapse-1" >Top</a></h5>
+						
+				</div>
+			</div>
+		</div>
+
+	<!--Add/Edit Menu-->	
+       <div class="row">
+            <div class="box">
+                <div class="col-lg-12 ">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Add / Edit Menu</strong>
+                    </h2>
+                    <hr>
+						<div class="text-center">
+									<input type="text" id="menu_Search" placeholder="Search for a menu"  name="menu_Search"/>
+									<button type="submit" class="btn btn-default btn-xs" id="menu_Search_Btn"  name="menu_SearchBtn">
+										<span class="glyphicon glyphicon-search" id="gly_menu_search"></span>
+									</button>
+									
+						</div>	
+                    <hr class="visible-xs">
+					<br>
+					<div class="row">
+						<div class="box">
+							<div class="col-lg-12">
+		
+								<form role="form" id="restaurantMenu_form">
+									<div class="row">
+										<div class="form-group col-lg-12 col-md-12 col-xs-12" id="menuName_div">
+											<label id="menuName_label">Menu Name</label>
+											<input type="text"   class="form-control" id="menuName_txt" name="menu_Name"/>
+										</div>
+										<div class="form-group col-lg-12 col-md-12 col-xs-12" id="menuCode_div">		
+												<label id="menuCode_label">Menu Code</label>
+												<input type="text"   class="form-control" id="menuCode_txt" name="menu_Code"/>
+										</div>										
+	
+
+											<div class="clearfix"></div>
+											<div class="row" >	
+												<div class="form-group col-lg-3 col-md-3 col-xs-12" class="menu_button" id="menu_butt1" >
+													  <input type="hidden" name="submitMenu" value="contact">
+													  <button  type="submit" class="btn btn-default btn-lg btn-group-justified" id ="menuSubmit_button">Submit</button>
+														
+												</div>
+												<div class="form-group col-lg-3 col-md-3 col-xs-12" class="menu_button" id="menu_butt2" >
+													 <input type="hidden" name="menuDish_add" value="add">
+													<button type="button" class="btn btn-default restaurant_btn btn-lg btn-group-justified" id="addDish_To_menu " onclick="location.href='#restaurantDish_form';">Add Dish</button>   
+												</div>
+												<div class="form-group col-lg-3 col-md-3 col-xs-12" class="menu_button" id="menu_butt2" >
+													 <input type="hidden" name="menuDelete" value="delete">
+													<button type="button" class="btn btn-default restaurant_btn btn-lg btn-group-justified" id="addDish_To_menu " onclick="">Delete</button>   
+												</div>													
+												<div class="form-group col-lg-3 col-md-3 col-xs-12" class="menu_button" id="menu_butt3" >
+													 <input type="hidden" name="clearMenu" value="reset">
+													<button type="reset" class="btn btn-default restaurant_btn btn-lg btn-group-justified" id="menu_reset "  >Reset</button>   
+												</div>	
+											</div>
+									</div>
+								</form>
+								
+							</div>
+						</div>
+					</div>
+					<h5 class="text-center"><a href="#bs-example-navbar-collapse-1" >Top</a></h5>
+				</div>
+			</div>
+		</div>
+
+	
+	
+	<!--Add/Edit Dish-->
+        <div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Add / Edit Dish</strong>
+                    </h2>
+                    <hr>
+						<div class="text-center">
+									<input type="text" name="dish_Search" id="dish_Search" placeholder="Search for a dish"/>
+									<button type="submit" class="btn btn-default btn-xs" id="dish_Search_Btn">
+										<span class="glyphicon glyphicon-search" id="gly_dish_search"></span>
+									</button>
+									
+						</div>		
+						 
+					
+                    <hr class="visible-xs">
+					<br>
+					<div class="row">
+						<div class="box">
+							<div class="col-lg-12">
+		
+								<form role="form" id="restaurantDish_form">
+									<div class="row">
+										<div class="form-group col-lg-6 col-md-6 col-xs-12">
+											<label>Menu</label>
+											<input type="text"  name="menu" id="menuTxt" class="form-control" />
+
+										</div>
+	
+					
+										<div class=" form-group col-lg-6 col-md-6 col-xs-12">
+											<label>Dish Name</label>
+											<input type="text" name="dish_Name" id="dishName"class="form-control">
+										</div>
+											<div class="form-group col-lg-6 col-md-6 col-xs-12">
+													<label>Cuisine Type</label>
+													<input type="text" name="cuisine_Type" id="menuDatalist"  class="form-control" />
+													
+											</div>		
+											<div class="form-group col-lg-6 col-md-6 col-xs-12">
+													<label>Dish Type</label>
+													<input type="text" name="dish_Type"id="dishDatalist" class="form-control" >
+											
+											</div>
+										<div class="form-group col-lg-6 col-md-6 col-xs-12">
+													<label>Dish Code</label>
+													<input type="text" name="dish_Code" id="dishCode" class="form-control"  onClick="">
+													
+											</div>		
+											<div class="form-group col-lg-6 col-md-6 col-xs-12">
+													<label>Available On</label>
+													<input type="text"  name="available_Dates" id="availableDates" class="form-control" name="">
+											
+											</div>											
+										
+											<div class="clearfix"></div>
+											<div class="form-group col-lg-12 col-md-12 col-xs-12">
+												<br/>
+												<label>Prices</label><br/>
+																								
+												<table class="table-responsive table-bordered" id="dish_prices">
+													<thead>
+
+														<tr>
+															<th>Size</th>
+															<th onClick="addRowTo_Dish_Prices()">Price</th>
+															
+														</tr>
+													</thead>
+													
+														<tr>
+															<td><input type="text" name="portion_Size" id="" class="form-control sizeList" /></td>
+															<td><input type="text"  name="portion_Price" id="" class="form-control sizeList" /></td>
+														</tr>
+					
+													
+												</table>
+												<br/>
+												<div class="form-group col-lg-6 col-md-6 col-xs-6"  >
+												<button  type="button" onClick="addRowTo_Dish_Prices()" class="btn btn-default btn-sm btn-group-justified add_buttons">Add </button>
+												</div>
+												<div class="form-group col-lg-6 col-md-6 col-xs-6"  >
+												<button  type="button" onClick="removeRows_Dish_Prices()" class="btn btn-default btn-sm btn-group-justified add_buttons">Remove  </button>											
+												</div>
+											</div>
+											<div class="clearfix"></div>
+											<div class="form-group col-lg-6 col-md-6 col-xs-12">
+												<label>Description</label>
+												<textarea class="form-control" rows="6"></textarea>
+											</div>
+																			
+											<div class="form-group col-lg-6 col-md-6 col-xs-12">
+												<label>Dish Images</label>
+												<input type="file" name="dish_img" id="prevDishImg" accept="image/*" multiple="multiple"/>
+												<br>
+												<div id="dvDishPreview">
+															
+												</div>
+											</div>
+											<div class="clearfix"></div>
+											<div class="row" >	
+												<div class="form-group col-lg-4 col-md-4 col-xs-12" class="dish_button" id="dish_submit" >
+													  <input type="hidden" name="save" value="contact">
+													  <button id ="dishSubmit_button" type="submit" class="btn btn-default dish_btn btn-lg btn-group-justified" >Submit</button>
+												</div>
+												<div class="form-group col-lg-4 col-md-4 col-xs-12" class="dish_button" id="dish_butt2" >
+													 <input type="hidden" name="delete" value="delete">
+													<button type="button" class="btn btn-default dish_btn btn-lg btn-group-justified" id="dishDelete_button " onclick='' >Delete</button>   
+												</div>												
+												<div class="form-group col-lg-4 col-md-4 col-xs-12" class="dish_button" id="dish_butt3" >
+													 <input type="hidden" name="clear" value="reset">
+													<button type="reset" class="btn btn-default dish_btn btn-lg btn-group-justified" id="dishReset_button  " onclick='$("#dvDishPreview img").remove()'n >Reset</button>   
+												</div>	
+											</div>
+									</div>
+								</form>
+								
+							</div>
+						</div>
+					</div>
+					<h5 class="text-center"><a href="#bs-example-navbar-collapse-1" >Top</a></h5>
+				</div>
+			</div>
+		</div>
+		<!--Offers: Displays the offers added to the system/database.If there is no offer added the empty table will be displayed-->
+		<div class="row">
+            <div class="box">
+                <div class="col-lg-12 ">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Offers</strong>
+                    </h2>
+                    <hr>
+
+                    <hr class="visible-xs">
+					<br/>
+
+					<div class="col-lg-12,col-md-12, col-xs-12, table-responsive, offer_table " >
+						<table class="table, table-bordered", "table-hover">
+							<div class="header-row offer_row">
+							<span class="cell primary">Offer</span>
+							<span class="cell">Offer Code</span>
+							<span class="cell">Offer Image</span>
+	
+						   
+							</div>
+							<div class="offer_row">
+								<input type="radio" name="expand">
+								<span class="cell primary" data-label="Offer"></span>
+								<span class="cell" data-label="Offer Code"></span>
+								<span class="cell" data-label="Offer Image"></span>
+															
+							</div> <br/>
+
+						</table>
+
+						<br/><br/>
+					</div>
+											
+							<h5 class="text-center"><a href="#bs-example-navbar-collapse-1" >Top</a></h5>
+						
+				</div>
+			</div>
+		</div>		
+		<!--Add/Edit Offer-->
+		<div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr/>
+                    <h2 class="intro-text text-center">
+                        <strong>Add / Edit Offer</strong>
+                    </h2>
+                    <hr/>
+					
+                    <hr class="visible-xs"/>
+					<br>
+					<div class="row">
+						<div class="box">
+							<div class="col-lg-12">
+		
+								<form role="form" id="restaurantOffer_form">
+									<div class="row">
+										<div class="form-group col-lg-6 col-md-6 col-xs-12">
+											<label>Offer</label>
+											<input type="text"   class="form-control" />
+										</div>
+										
+										<div class=" form-group col-lg-6 col-md-6 col-xs-12">
+											<label>Offer Code</label>
+											<input type="text"  class="form-control">
+										</div>
+										<div class="clearfix"></div>
+										<div class="form-group col-lg-6 col-md-6 col-xs-12">
+											<label>Description</label>
+											<textarea class="form-control" rows="6"></textarea>
+										</div>																			
+										<div class="form-group col-lg-6 col-md-6 col-xs-12">
+											<label>Offer Images</label>
+											<input type="file" name="offer_img" id="prevOfferImg" accept="image/*" multiple="multiple"/>
+											<br>
+											<div id="dvOfferPreview">
+															
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="row" >	
+											<div class="form-group col-lg-4 col-md-4 col-xs-12" class="offer_button" id="offer_but1" >
+												<input type="hidden" name="save" value="contact">
+												<button  type="submit" class="btn btn-default btn-lg btn-group-justified" id ="offerSubmit_button" >Submit</button>
+														
+											</div>
+											<div class="form-group col-lg-4 col-md-4 col-xs-12" class="offer_button" id="offer_but2" >
+												 <input type="hidden" name="delete" value="delete">
+												<button type="button" class="btn btn-default offer_btn btn-lg btn-group-justified" id="offerDelete_button " onclick='' >Delete</button>   
+											</div>												
+											<div class="form-group col-lg-4 col-md-4 col-xs-12" class="offer_button" id="offer_but2" >
+												<input type="hidden" name="clear" value="reset">
+												<button type="reset" class="btn btn-default restaurant_btn btn-lg btn-group-justified" id="offerReset_button " onclick='$("#dvOfferPreview img").remove()'n >Reset</button>   
+											</div>	
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<h5 class="text-center"><a href="#bs-example-navbar-collapse-1" >Top</a></h5>
+				</div>
+			</div>
+		</div>
+
+    </div>
+    <!-- /.container -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Copyright &copy; Risto 2015</p>
+					
+					<p>Team LESA</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+	   <!-- Custom js -->
+    <script src="js/custom.js"></script>
+
+
+	<script src="js/jquery.easy-autocomplete.min.js" type="text/javascript" ></script>
+	<script>
+		var options = {
+			url: "data/menu.json",
+			getValue: "name",
+			list: {
+			
+				match: {
+					enabled: true
+				}
+			},
+			theme: "bootstrap"
+		};
+		$("#menuDatalist").easyAutocomplete(options);
+	</script>
+	<script>
+		var options = {
+			url: "data/dish.json",
+			getValue: "name",
+			list: {
+			
+				match: {
+					enabled: true
+				}
+			},
+			theme: "bootstrap"
+		};
+		$("#dishDatalist").easyAutocomplete(options);
+	</script>
+	<script>
+		var options = {
+			url: "data/portion_size.json",
+			getValue: "name",
+			list: {
+			
+				match: {
+					enabled: true
+				}
+			},
+			theme: "bootstrap"
+		};
+		$(".sizeList").easyAutocomplete(options);
+	</script>	
+	<script>
+		var options = {
+			url: "data/availableDates.json",
+			getValue: "name",
+			list: {
+			
+				match: {
+					enabled: true
+				}
+			},
+			theme: "bootstrap"
+		};
+		$("#availableDates").easyAutocomplete(options);
+	</script>
+<!--For the Add/Edit Dish-->
+	<script language="javascript" type="text/javascript">
+        $(function () {
+            $("#prevDishImg").change(function () {
+                if (typeof (FileReader) != "undefined") {
+                    var dvPreview = $("#dvDishPreview");
+                    dvPreview.html("");
+                    var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+                    $($(this)[0].files).each(function () {
+                        var file = $(this);
+                        if (regex.test(file[0].name.toLowerCase())) {
+                            var reader = new FileReader();
+                            reader.onload = function (e) {
+                                var img = $("<img onclick='$ (this).remove()'/>");
+                                img.attr("style", "height:150px;width: 180px");
+                                img.attr("src", e.target.result);
+                                dvPreview.append(img);
+                            }
+                            reader.readAsDataURL(file[0]);
+                        } else {
+                            alert(file[0].name + " is not a valid image file.");
+                            dvPreview.html("");
+                            return false;
+                        }
+                    });
+                } else {
+                    alert("This browser does not support HTML5 FileReader.");
+                }
+            });
+        });
+    </script>
+<!--For the Add/Edit Offer-->	
+	<script language="javascript" type="text/javascript">
+        $(function () {
+            $("#prevOfferImg").change(function () {
+                if (typeof (FileReader) != "undefined") {
+                    var dvPreview = $("#dvOfferPreview");
+                    dvPreview.html("");
+                    var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+                    $($(this)[0].files).each(function () {
+                        var file = $(this);
+                        if (regex.test(file[0].name.toLowerCase())) {
+                            var reader = new FileReader();
+                            reader.onload = function (e) {
+                                var img = $("<img onclick='$ (this).remove()'/>");
+                                img.attr("style", "height:150px;width: 180px");
+                                img.attr("src", e.target.result);
+                                dvPreview.append(img);
+                            }
+                            reader.readAsDataURL(file[0]);
+                        } else {
+                            alert(file[0].name + " is not a valid image file.");
+                            dvPreview.html("");
+                            return false;
+                        }
+                    });
+                } else {
+                    alert("This browser does not support HTML5 FileReader.");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
